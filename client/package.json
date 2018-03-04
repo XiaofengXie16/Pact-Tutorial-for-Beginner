@@ -1,0 +1,21 @@
+{
+  "name": "learn-pact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha consumer.spec.js",
+    "publish": "node publish.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@pact-foundation/pact": "^5.7.0",
+    "@pact-foundation/pact-node": "^6.11.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.0.1",
+    "superagent": "^3.8.2"
+  }
+}

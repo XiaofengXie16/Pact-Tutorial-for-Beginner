@@ -1,0 +1,51 @@
+I, [2018-03-03T19:39:38.707316 #9720]  INFO -- : Registered expected interaction GET /hello
+D, [2018-03-03T19:39:38.707316 #9720] DEBUG -- : {
+  "description": "a request for greeting",
+  "request": {
+    "method": "GET",
+    "path": "/hello",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": [
+      {
+        "message": "hello"
+      }
+    ]
+  }
+}
+I, [2018-03-03T19:39:38.717317 #9720]  INFO -- : Received request GET /hello
+D, [2018-03-03T19:39:38.718318 #9720] DEBUG -- : {
+  "path": "/hello",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:3000",
+    "Accept-Encoding": "gzip, deflate",
+    "User-Agent": "node-superagent/3.8.2",
+    "Accept": "application/json",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2018-03-03T19:39:38.718318 #9720]  INFO -- : Found matching response for GET /hello
+D, [2018-03-03T19:39:38.718318 #9720] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": [
+    {
+      "message": "hello"
+    }
+  ]
+}
+I, [2018-03-03T19:39:38.728346 #9720]  INFO -- : Verifying - interactions matched
+I, [2018-03-03T19:39:38.739348 #9720]  INFO -- : Cleared interactions
+I, [2018-03-03T19:39:38.751340 #9720]  INFO -- : Writing pact for sender to C:/Users/Mark/Project/Pact/client/pacts/receiver-sender.json

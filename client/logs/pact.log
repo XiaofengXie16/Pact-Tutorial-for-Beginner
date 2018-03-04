@@ -1,0 +1,47 @@
+I, [2018-03-03T17:53:54.270334 #14676]  INFO -- : Registered expected interaction GET /projects
+D, [2018-03-03T17:53:54.270334 #14676] DEBUG -- : {
+  "description": "a request for projects",
+  "providerState": "i have a list of projects",
+  "request": {
+    "method": "GET",
+    "path": "/projects",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      {
+        "id": 1,
+        "name": "Project 1",
+        "due": "2016-02-11T09:46:56.023Z",
+        "tasks": [
+          {
+            "id": 1,
+            "name": "Do the laundry",
+            "done": true
+          },
+          {
+            "id": 2,
+            "name": "Do the dishes",
+            "done": false
+          },
+          {
+            "id": 3,
+            "name": "Do the backyard",
+            "done": false
+          },
+          {
+            "id": 4,
+            "name": "Do nothing",
+            "done": false
+          }
+        ]
+      }
+    ]
+  }
+}

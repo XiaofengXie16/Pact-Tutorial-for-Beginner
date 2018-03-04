@@ -1,0 +1,36 @@
+{
+  "consumer": {
+    "name": "receiver"
+  },
+  "provider": {
+    "name": "sender"
+  },
+  "interactions": [
+    {
+      "description": "a request for greeting",
+      "request": {
+        "method": "GET",
+        "path": "/hello",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "message": "hello"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
