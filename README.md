@@ -60,4 +60,4 @@
 ---
 ### Special Thanks
 
-@JiahuaZhang for helping  me to review this tutorial.
+[@JiahuaZhang](https://github.com/JiahuaZhang) for helping  me to review this tutorial.
