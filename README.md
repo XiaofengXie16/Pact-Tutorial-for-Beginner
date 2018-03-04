@@ -2,12 +2,17 @@
 
 ## Usage
 
+### Prerequisite
+
+* `git clone https://github.com/skyrex-mark/Pact-Tutorial-for-Beginner.git`
+
 ### Step 1 - Install a pact broker on your local machine
 
 * Install ruby 2.2.0 or later and bundler >= 1.12.0
   * Windows users: get a Rails/Ruby installer from [RailsInstaller](http://railsinstaller.org/) and run it
   * unix users `sudo apt install ruby-full`
-* Run `git clone https://github.com/pact-foundation/pact_broker.git && cd pact_broker/example` or `cd pact_broker`
+* oepn a new terminal
+* Run `git clone https://github.com/pact-foundation/pact_broker.git && cd pact_broker/example` or `cd pact_broker/example`
 * Run `bundle install`
 * Run `bundle exec rackup -p 8080` (this will use a Sqlite database. If you want to try it out with a Postgres database, see the [README](https://github.com/pact-foundation/pact_broker/tree/master/example) in the example directory.)
 * Open [http://localhost:8080](http://localhost:8080) and you should see a list containing the pact between the Zoo App and the Animal Service
@@ -19,7 +24,8 @@
 
 ### Step 2 - Generate a pact file from the client side and publish back to the local pact broker
 
-* `cd client`
+* open a new terminal
+* `cd` to client directory
 * run `npm install` or `yarn install`
 * run `npm run test` or `yarn test`
 * a pact file will be genreated in the `pacts` folder
@@ -27,7 +33,10 @@
 
 ### Step 3- Verifiy the pact and publish the result to the local pact broker
 
+* open a new terminal
 * `cd api-service`
 * run `npm install` or `yarn install`.
 * run `npm start` or `yarn start` to spin up .a local api service
+* open a new terminal
+* `cd` to api-service directory
 * run `npm run test` or `yarn test` to retrieve the pact from the local broker , verify the pact with local service and send the verification result back to the pact broker
