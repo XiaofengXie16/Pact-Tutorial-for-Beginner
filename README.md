@@ -55,7 +55,8 @@
 * `git clone https://github.com/DiUS/pact_broker-docker.git`
 * `cd pact_broker-docker`
 * run `docker-compose up`
-* Wait for the pact broker to go online
+* Wait for the pact broker to go online( 2-5 min)
+* navigate to `http://localhost:8080/` to see the pact broker 
 
 ---
 ### Special Thanks
