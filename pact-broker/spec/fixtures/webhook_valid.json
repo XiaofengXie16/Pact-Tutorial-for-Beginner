@@ -1,0 +1,17 @@
+{
+  "events": [{
+    "name": "something_happened"
+  }],
+  "request": {
+    "method": "POST",
+    "url": "http://some.url",
+    "username": "username",
+    "password": "password",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "body": {
+      "a" : "body"
+    }
+  }
+}

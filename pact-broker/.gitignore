@@ -1,0 +1,37 @@
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+log
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+reports
+dev
+
+# YARD artifacts
+.yardoc
+_yardoc
+.bin
+
+# Editor files
+*.sublime*
+*.swp
+.idea
+
+*.sqlite
+Gemfile.lock
+
+bethtest/
+bin/
+db/test/change_migration_strategy/pact_broker_database.sqlite3
+coverage
+db/test/backwards_compatibility/pids
+db/test/backwards_compatibility/pact_broker_database.sqlite3
+spec/examples.txt
