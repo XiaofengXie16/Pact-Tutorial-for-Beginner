@@ -1,8 +1,8 @@
-#Pact.js 101
+# Pact.js 101
 
-##Usage
+## Usage
 
-###Step 1 - Install a pact broker on your local machine
+### Step 1 - Install a pact broker on your local machine
 
 * Install ruby 2.2.0 or later and bundler >= 1.12.0
   * Windows users: get a Rails/Ruby installer from [RailsInstaller](http://railsinstaller.org/) and run it
@@ -16,7 +16,7 @@
 * Click on the HAL Browser link to have a poke around the API
 * Click on the book icon under "docs" to view documentation related to a given relation
 
-###Step 2 - Generate a pact file from the client side and publish back to the local pact broker
+### Step 2 - Generate a pact file from the client side and publish back to the local pact broker
 
 * `cd client`
 * run `npm install` or `yarn install`
@@ -24,7 +24,7 @@
 * a pact file will be genreated in the `pacts` folder
 * run `npm run publish` or `yarn publish`, the pact file.will be published to the local pact broker
 
-###Step 3- Verifiy the pact and publish the result to the local pact broker
+### Step 3- Verifiy the pact and publish the result to the local pact broker
 
 * `cd api-service`
 * run `npm install` or `yarn install`.
