@@ -27,7 +27,7 @@
 * open a new terminal
 * `cd` to client directory
 * run `npm install` or `yarn install`
-* run `npm run test` or `yarn test`
+* run `npm run test` or `yarn test`, if the test fails , try to run `mocha -t 50000 consumer.spec.js` instead
 * a pact file will be genreated in the `pacts` folder
 * run `npm run publish` or `yarn publish`, the pact file.will be published to the local pact broker
 
