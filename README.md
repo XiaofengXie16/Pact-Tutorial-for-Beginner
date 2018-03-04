@@ -7,7 +7,7 @@
 * Install ruby 2.2.0 or later and bundler >= 1.12.0
   * Windows users: get a Rails/Ruby installer from [RailsInstaller](http://railsinstaller.org/) and run it
   * unix users just use your package manager
-* Run `git clone https://github.com/pact-foundation/pact_broker.git && cd pact_broker/example`
+* Run `git clone https://github.com/pact-foundation/pact_broker.git && cd pact_broker/example` or `cd pact_broker`
 * Run `bundle install`
 * Run `bundle exec rackup -p 8080` (this will use a Sqlite database. If you want to try it out with a Postgres database, see the [README](https://github.com/pact-foundation/pact_broker/tree/master/example) in the example directory.)
 * Open [http://localhost:8080](http://localhost:8080) and you should see a list containing the pact between the Zoo App and the Animal Service
