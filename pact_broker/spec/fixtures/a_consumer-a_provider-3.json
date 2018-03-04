@@ -1,0 +1,22 @@
+{
+  "consumer": {
+    "name": "A Consumer"
+  },
+  "provider": {
+    "name": "A Provider"
+  },
+  "interactions": [
+    {
+      "description" : "another request for something",
+      "providerState": null,
+      "request": {
+        "method": "get",
+        "path" : "/something_else"
+      },
+      "response": {
+        "status": 200,
+        "body" : "something"
+      }
+    }
+  ]
+}
