@@ -20,7 +20,7 @@
 
 * `cd client`
 * run `npm install` or `yarn install`
-* run `npm test` or `yarn test`
+* run `npm run test` or `yarn test`
 * a pact file will be genreated in the `pacts` folder
 * run `npm run publish` or `yarn publish`, the pact file.will be published to the local pact broker
 
