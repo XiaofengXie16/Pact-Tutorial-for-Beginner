@@ -3,11 +3,13 @@
 ## Usage
 
 ---
+
 ### Prerequisite
 
 * `git clone https://github.com/skyrex-mark/Pact-Tutorial-for-Beginner.git`
 
 ---
+
 ### Step 1 - Install a pact broker on your local machine
 
 * Install ruby 2.2.0 or later and bundler >= 1.12.0
@@ -44,6 +46,7 @@
 * run `npm run test` or `yarn test` to retrieve the pact from the local broker , verify the pact with local service and send the verification result back to the pact broker
 
 ---
+
 ### Alternative Hosting Solution
 
 ### Use Dockerized Pact Broker
@@ -56,9 +59,24 @@
 * `cd pact_broker-docker`
 * run `docker-compose up`
 * Wait for the pact broker to go online( 2-5 min)
-* navigate to `http://localhost:8080/` to see the pact broker 
+* navigate to `http://localhost` to see the pact broker
+
+  #### Note: You need to change the port number if you used the docker version of pact broker
+
+  Client:
+
+  1.  Go to the `client` directory
+  2.  Open `publish.js`
+  3.  Change `pactBroker: 'http://localhost:8080'` to `pactBroker: 'http://localhost'`
+
+  Provider:
+
+  1.  Go to the `api-service` directory
+  2.  Open `provider.spec.js`
+  3.  Change `pactUrls: [ 'http://localhost:8080/pacts/provider/sender/consumer/receiver/latest' ]` to `pactUrls: [ 'http://localhost/pacts/provider/sender/consumer/receiver/latest`
 
 ---
+
 ### Special Thanks
 
-[@JiahuaZhang](https://github.com/JiahuaZhang) for helping  me to review this tutorial.
+[@JiahuaZhang](https://github.com/JiahuaZhang) for helping me to review this tutorial.
