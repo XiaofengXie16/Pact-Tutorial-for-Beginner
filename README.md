@@ -61,7 +61,7 @@
 * Wait for the pact broker to go online( 2-5 min)
 * navigate to `http://localhost` to see the pact broker
 
-  #### Note: You need to change the port number if you used the docker version of pact broker
+  #### Note: You need to change the port number if you choose to use the docker version of pact broker
 
   Client:
 
