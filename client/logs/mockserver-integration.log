@@ -1,5 +1,5 @@
-I, [2018-03-12T00:37:31.104552 #14992]  INFO -- : Registered expected interaction GET /hello
-D, [2018-03-12T00:37:31.105052 #14992] DEBUG -- : {
+I, [2018-03-12T00:39:14.978729 #17340]  INFO -- : Registered expected interaction GET /hello
+D, [2018-03-12T00:39:14.978729 #17340] DEBUG -- : {
   "description": "a request for greeting",
   "request": {
     "method": "GET",
@@ -20,8 +20,8 @@ D, [2018-03-12T00:37:31.105052 #14992] DEBUG -- : {
     ]
   }
 }
-I, [2018-03-12T00:37:31.115048 #14992]  INFO -- : Received request GET /hello
-D, [2018-03-12T00:37:31.115549 #14992] DEBUG -- : {
+I, [2018-03-12T00:39:14.989230 #17340]  INFO -- : Received request GET /hello
+D, [2018-03-12T00:39:14.989706 #17340] DEBUG -- : {
   "path": "/hello",
   "query": "",
   "method": "get",
@@ -34,8 +34,8 @@ D, [2018-03-12T00:37:31.115549 #14992] DEBUG -- : {
     "Version": "HTTP/1.1"
   }
 }
-I, [2018-03-12T00:37:31.115549 #14992]  INFO -- : Found matching response for GET /hello
-D, [2018-03-12T00:37:31.115549 #14992] DEBUG -- : {
+I, [2018-03-12T00:39:14.989706 #17340]  INFO -- : Found matching response for GET /hello
+D, [2018-03-12T00:39:14.990205 #17340] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -46,6 +46,6 @@ D, [2018-03-12T00:37:31.115549 #14992] DEBUG -- : {
     }
   ]
 }
-I, [2018-03-12T00:37:31.125580 #14992]  INFO -- : Verifying - interactions matched
-I, [2018-03-12T00:37:31.136073 #14992]  INFO -- : Cleared interactions
-I, [2018-03-12T00:37:31.146549 #14992]  INFO -- : Writing pact for sender to C:/Users/Mark/Project/Pact/Pact-Tutorial-for-Beginner/client/pacts/receiver-sender.json
+I, [2018-03-12T00:39:14.999705 #17340]  INFO -- : Verifying - interactions matched
+I, [2018-03-12T00:39:15.010206 #17340]  INFO -- : Cleared interactions
+I, [2018-03-12T00:39:15.021207 #17340]  INFO -- : Writing pact for sender to C:/Users/Mark/Project/Pact/Pact-Tutorial-for-Beginner/client/pacts/receiver-sender.json

@@ -8,8 +8,6 @@ const publisher = require('@pact-foundation/pact-node');
 const MOCK_PORT = 3000;
 const LOG_LEVEL = process.env.LOG_LEVEL || 'WARN';
 
-
-
 describe('Pact', () => {
   const provider = new Pact({
     consumer: 'receiver',
@@ -51,7 +49,6 @@ describe('Pact', () => {
       .get(`http://localhost:${MOCK_PORT}/hello`)
       .set({ Accept: 'application/json' });
 
-    console.log(response.body);
     expect(response.body).to.eql(ExpectedBody);
   });
 
