@@ -8,7 +8,7 @@ const publisher = require('@pact-foundation/pact-node');
 const MOCK_PORT = 3000;
 const LOG_LEVEL = process.env.LOG_LEVEL || 'WARN';
 
-chai.use(chaiAsPromised);
+
 
 describe('Pact', () => {
   const provider = new Pact({
@@ -27,36 +27,32 @@ describe('Pact', () => {
     }
   ];
 
-  before(done => {
-    provider
-      .setup()
-      .then(() => {
-        return provider.addInteraction({
-          given: 'the service api endpoint is available',
-          uponReceiving: 'a request for greeting',
-          withRequest: {
-            method: 'GET',
-            path: '/hello',
-            headers: { Accept: 'application/json' }
-          },
-          willRespondWith: {
-            status: 200,
-            headers: { 'Content-Type': 'application/json; charset=utf-8' },
-            body: ExpectedBody
-          }
-        });
-      })
-      .then(() => done());
+  before(async () => {
+    await provider.setup();
+
+    await provider.addInteraction({
+      given: 'the service api endpoint is available',
+      uponReceiving: 'a request for greeting',
+      withRequest: {
+        method: 'GET',
+        path: '/hello',
+        headers: { Accept: 'application/json' }
+      },
+      willRespondWith: {
+        status: 200,
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+        body: ExpectedBody
+      }
+    });
   });
 
-  it('should returns a greeting message', done => {
-    request
+  it('should returns a greeting message', async () => {
+    const response = await request
       .get(`http://localhost:${MOCK_PORT}/hello`)
-      .set({ Accept: 'application/json' })
-      .then(response => {
-        expect(response.body).to.eql(ExpectedBody);
-      })
-      .then(() => done());
+      .set({ Accept: 'application/json' });
+
+    console.log(response.body);
+    expect(response.body).to.eql(ExpectedBody);
   });
 
   afterEach(() => provider.verify());
